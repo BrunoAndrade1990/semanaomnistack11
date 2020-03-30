@@ -1,25 +1,33 @@
+//import React, { useState } from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import Header from './Header';
+//import Logon from './pages/Logon';
+import Routes from './routes';
+import './global.css'
+
+// JSX - (JavaScritp + XML)
+// Componente no React é uma função que retorna HTML; Pode ter funcionalidades JS, HTML...
 
 function App() {
+  //let counter = useState(0);
+  //const [counter, setCounter] = useState(0);
+  // Retorna um array com duas posições: A primeira é o valor da variavel, a segunda é uma função de atualização do valor
+
+  //function increment() {
+    //counter += 1;
+    //setCounter(counter + 1);
+    //console.log(counter);
+  //}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Header title="Semana OmniStarck" />
+    // <Header>
+    //   Semana OmniStarck
+    // </Header>
+    //<div>
+      //<Header>Contador: {counter}</Header>
+      //<button onClick={increment}>Incrementar</button>
+    //</div>
+    <Routes/>
   );
 }
 
